@@ -1,0 +1,19 @@
+@import url(./normalize.css);
+@import url(./reset.css);
+
+/* hidden contents */
+.a11y-hidden {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+/* default style*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
