@@ -16,4 +16,136 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+button {
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent;
+  border: none;
+  cursor: grab;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+header {
+  position: relative;
+}
+.logo {
+  height: 120px;
+  background: url("../images/imageSrc.png") no-repeat center;
+  background-size: 250px;
+}
+.language-button {
+  position: absolute;
+  top: 50px;
+  right: 130px;
+  font-weight: 600;
+  font-size: 17px;
+}
+.language-button::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url("../images/ico_arrow1.png") no-repeat;
+  background-size: 7px;
+  top: 8px;
+  margin-left: 15px;
+  position: absolute;
+}
+.language-button:hover {
+  color: red;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 110px;
+  border-top: 1px solid #ccc;
+}
+
+.menu-button {
+  letter-spacing: -0.05cm;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.slogan {
+  background: url("../images/imageSrc.gif") no-repeat;
+  background-position: 60% 0;
+  background-size: 100% 600px;
+  object-fit: cover;
+  padding-top: 150px;
+}
+.slogan p {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 5px 0;
+}
+.slogan p:nth-child(2) {
+  font-size: 3.5rem;
+  letter-spacing: -0.07cm;
+  line-height: 70px;
+  padding-bottom: 250px;
+}
+
+.slogan-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slogan-title {
+  padding: 25px 104.6px;
+  background: #57595f;
+  border-right: 1px solid white;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.slogan img {
+  display: none;
+}
+.slogan-name {
+  display: none;
+}
+
+.card {
+  height: 400px;
+  background: pink;
+}
+.card-thumbnail {
+  padding: 120px 50px;
+  background: lightgreen;
+  display: flex;
+  justify-content: center;
+}
+.thumbnail {
+  margin: 0 20px;
+  width: 30%;
+  height: 500px;
+}
+.thumbnail:nth-child(1) {
+  background: url("../images/sec_img1.png") no-repeat;
+}
+.thumbnail:nth-child(2) {
+  background: url("../images/sec_img2.png") no-repeat;
+}
+.thumbnail:nth-child(3) {
+  background: url("../images/sec_img3.png") no-repeat;
+}
+.thumbnail:nth-child(4) {
+  background: url("../images/sec_img4.png") no-repeat;
 }
